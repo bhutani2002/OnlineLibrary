@@ -1,0 +1,374 @@
+ @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+.container{
+     margin-right: 40px;
+}
+ body {
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);
+  background: linear-gradient(to right, #2c3e50, #2980b9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+#wrapper{
+    /* width:800px; */
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+}
+.page-banner{
+    background: lightgray ;
+    padding: 1px 8px;
+    border-radius: 6px 6px 0px 0px;
+}
+.page-banner h1{
+    text-align: left;
+}
+.displayBox {
+    width: 100%;
+    font-family: Verdana, Tahoma, sans-serif;
+    height:400px;
+    text-align: left;
+    padding:18px 5px;
+    color: white;
+    font-size: 20px;
+}
+.footer
+{
+  background: lightblue ;
+  padding: 10px 8px;
+  border-radius:0px 0px 6px 6px;
+}
+
+
+#wrapper1{
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
+}
+
+#page-banner1{
+    background: lightgray;
+    border-radius: 6px 6px 0px 0px;
+}
+#page-banner1 h3{
+    text-align: center;
+    font-size: 25px;
+}
+.title
+{
+  margin-top: 0px;
+  border-radius: 6px;
+}
+ .displayBox1 {
+    width: 100%;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    padding:0px 5px 20px 5px;
+    color: white;
+    margin-top: 0px;
+}
+.footer1
+{
+  background: lightblue ;
+  padding: 10px 0;
+  border-radius:0px 0px 6px 6px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.t
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.z
+{
+  width:70%;
+  padding-left: 40px;/*210px*/
+  padding-right:150px;
+}
+.responsive
+{
+    padding-right: 100px;
+}
+#q {
+  font-weight: bold;
+  font-family: 'New Tegomin', serif;
+  font-size: 45px;
+}
+.search {
+    border-radius: 9px;
+    border: 3px solid black;
+    font-size: 18px;
+    padding: 1px;
+}
+.btn1 {
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-right: 9px;
+}
+#blue a{
+  text-decoration:none;
+  color:white;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+span{
+  color:black;
+}
+.footer > a{
+  text-decoration:none;
+  color:black;
+  font-size: 18px;
+}
+ul
+{
+  list-style-type:none;
+  padding-bottom: 5px;
+  padding-left: 25px;
+}
+ .scroll-box {
+    overflow-y: auto;
+    padding: 1rem; 
+ }  
+
+ #mostUsed{
+  font-weight: bold;
+  font-size:19px;
+  color:white;
+  letter-spacing: 1.5px;
+ }
+ #leastUsed{
+  font-weight: bold;
+  font-size:19px;
+  color:white;
+  letter-spacing: 1.5px;
+}
+#docLength
+{
+  font-weight: bold;
+  font-size:19px;
+  color:white;
+  letter-spacing: 1.5px;
+}
+#wordCount
+{
+  font-weight: bold;
+  font-size:19px;
+  color:white;
+  letter-spacing: 1.5px;
+}
+#footer1
+{
+  font-weight: bold;
+  font-family: 'New Tegomin', serif;
+}
+
+.togg{
+  position: absolute;
+  left:57%;
+  transform:translate(40%,-540%);
+}
+
+.toggle-btn{
+  width:40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  padding:5px;
+  transition: all 300ms ease-in-out;
+}
+
+.toggle-btn > .inner-circle{
+  width:20px;
+  height: 20px;
+  background: black;
+  border-radius:20px ; 
+  transition: all 300ms ease-in-out;
+}
+
+.toggle-btn.active{
+  background: blue;
+}
+
+.toggle-btn.active > .inner-circle{
+  margin-left: 20px;
+}
+.display{
+    display:none;
+  }
+
+.happy
+{
+  width:80vw;
+}
+.good
+{
+  text-align: center;
+}
+.bad
+{
+  left:84%;
+}
+
+.rrr
+{
+  padding-left: 360px;
+}
+
+
+
+
+/* @media(max-width:1500px)
+{
+  body{
+    background: #2980b9;
+    display: block;
+  }
+  .toggle-btn{
+    display: none;
+  }
+  .container{
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    min-width: 1000px;
+  }
+  .displayBox
+  {
+    font-size: 25px;
+  }
+  .heighted
+  {
+    padding:0px 20px 10px 180px;
+  }
+  #wrapper1
+  {
+    width:600px;
+  }
+ 
+  #blue a
+  {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+  }
+  .footer > a
+  {
+    font-size:25px;
+  }
+  .search
+{
+  line-height: 20px;
+  font-size: 21px;
+  font-weight: bold;
+}
+#newWord
+{
+  margin-right: 7px;
+}
+.btn1{
+  font-size:20px;
+}
+#mostUsed
+{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+#leastUsed
+{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+#docLength
+{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+#wordCount
+{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.footer1
+{
+  font-size: 23px;
+}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

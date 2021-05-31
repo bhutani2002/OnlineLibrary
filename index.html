@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="stylesheet.css" rel="stylesheet">
+  <link href="responsive.css" rel="stylesheet">
+  <title>Online Library </title>
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+</head>
+
+<body>
+  <div class="togg">
+    <div class="toggle-btn" onclick="this.classList.toggle('active'); resize();">
+      <div class="inner-circle"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="t">
+      <img src="https://i.ibb.co/Vmgf0Ym/lib-img.png" alt="lib-img" border="0" class="responsive" width=150px>
+      <div class="z" id="q">Online Library</div>
+    </div>
+    <div id="wrapper">
+      <header>
+        <div class="page-banner" id="fileName">
+          <h1><u>Book Title</u></h1>
+        </div>
+      </header>
+      <div class="body">
+        <div class="displayBox scroll-box" id="fileContent">
+          Please, select a book on the right!
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <a href="#">Link to my another library type Project</a>
+          <!--Link daalna baaki hai-->
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div class="heighted">
+    <div id="wrapper1">
+      <header>
+        <div id="page-banner1">
+          <h3 class="title">Search</h3>
+        </div>
+      </header>
+      <div class="body1 displayBox1">
+        <input type="text" placeholder="Search For...." class="search" id="keyword">
+        <button class="btn1" onclick="performMark()">Search</button>
+      </div>
+      <hr>
+      <div class="body1 displayBox1" style="padding-top: 15px;">
+        <input type="text" placeholder="Word to replace...." class="search" id="changeWord">
+        <input type="text" placeholder="New word...." class="search" id="newWord">
+        <button class="btn1" onclick="replaceWord()">Repalce</button>
+      </div>
+      <footer>
+        <div class="footer1" id="searchstat">
+        </div>
+      </footer>
+    </div>
+
+    <div id="wrapper1">
+      <header>
+        <div id="page-banner1">
+          <h3 class="title">Select a Book</h3>
+        </div>
+      </header>
+      <div class="body1 ">
+        <ul>
+          <li id="blue"><span style="padding-right: 19px;">&#9654;</span><a href="#"
+              onclick="loadBook('JekyllAndHyde.txt','<h1><u>Jekyll And Hyde</u></h1>')">Jekyll And Hyde</a></li>
+          <li id="blue"><span style="padding-right: 15px;">&#9654;</span><a href="#"
+              onclick="loadBook('AliceInWonderland.txt','<h1><u>Alice in Wonderland</u></h1>')"> Alice in Wonderland</a>
+          </li>
+          <li id="blue"><span style="padding-right: 15px;">&#9654;</span><a href="#"
+              onclick="loadBook('LOTR.txt','<h1><u>Lord of the Rings</u></h1>')"> Lord of the Rings</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="wrapper1">
+      <header>
+        <div id="page-banner1">
+          <h3 class="title">Most Used Words</h3>
+        </div>
+      </header>
+      <div class="body1 ">
+        <ul id="mostUsed">
+
+        </ul>
+      </div>
+    </div>
+
+    <div id="wrapper1">
+      <header>
+        <div id="page-banner1" class="size">
+          <h3 class="title">Least Used Words</h3>
+        </div>
+      </header>
+      <div class="body1">
+        <ul id="leastUsed">
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="wrapper1">
+      <header>
+        <div id="page-banner1">
+          <h3 class="title">Document Stats</h3>
+        </div>
+      </header>
+      <div class="body1 ">
+        <ul>
+          <li id="docLength"></li>
+          <li id="wordCount"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script id="template-ul-items" type="text/template">
+            <li>
+                {{val}}
+            </li>
+        </script>
+  <script src="https://kit.fontawesome.com/9664c8b16b.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="library.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>

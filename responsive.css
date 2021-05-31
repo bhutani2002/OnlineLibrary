@@ -1,0 +1,76 @@
+@media(max-width:1500px)
+{
+  body{
+    background: #2980b9;
+    display: block;
+  }
+  .toggle-btn{
+    display: none;
+  }
+  .container{
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    min-width: 1000px;
+  }
+  .displayBox
+  {
+    font-size: 25px;
+  }
+  .heighted
+  {
+    padding:0px 20px 10px 180px;
+  }
+  #wrapper1
+  {
+    width:600px;
+  }
+ 
+  #blue a
+  {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+  }
+  .footer > a
+  {
+    font-size:25px;
+  }
+  .search
+{
+  line-height: 20px;
+  font-size: 21px;
+  font-weight: bold;
+}
+#newWord
+{
+  margin-right: 7px;
+}
+.btn1{
+  font-size:20px;
+}
+#mostUsed
+{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+#leastUsed
+{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+#docLength
+{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+#wordCount
+{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.footer1
+{
+  font-size: 23px;
+}
+}
